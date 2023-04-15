@@ -1,0 +1,148 @@
+worker_3:
+    name:"worker_3"
+    word_label : word_label
+    canvas.before:
+        Color:
+            rgba:(241/255,226/255,205/255,1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
+        Color:
+            rgba:(233/255,214/255,199/255,1)
+        RoundedRectangle:
+            pos:300,300
+            size:180,180
+            radius: [(20, 20), (20, 20), (20, 20), (20, 20)]
+        RoundedRectangle:
+            pos:-60,420
+            size:90,90
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        RoundedRectangle:
+            pos:-10,140
+            size:100,100
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+
+        Color:
+            rgba:(255,255,255,255)
+        RoundedRectangle:
+            pos:50,120
+            size:300,310
+            radius: [(30, 30), (30, 30), (30, 30), (30,30)]
+        Color:
+            rgba:(244/255,241/255,238/255,255)
+        RoundedRectangle:
+            pos:80,370
+            size:100,100
+            source: 'Alexa.png'
+            radius: [(20, 20), (20, 20), (20, 20), (20,20)]
+        Color:
+            rgba:(255,255,255,255)
+        RoundedRectangle:
+            pos:70,520
+            size:280,50
+            radius: [(30, 30), (30, 30), (30, 30), (30,30)]
+
+    roundBtn : roundBtn
+    FloatLayout:
+        size:root.width, root.height
+        padding:10
+        Label:
+            markup:True
+            text: "[b]Alexa Jagger[/b]"
+            color : (53/255,51/255,52/255)
+            pos:-45,40
+            font_size:25
+        Label:
+            markup:True
+            text: "[font=arial][color=#7B7373]Product Designer with 5 years[/color][/font]"
+            pos:-30,1
+            font_size:13
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial][color=#7B7373]experience in UI/UX field[/color][/font]"
+            pos:-45,-20
+            font_size:13
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial][color=#7B7373]Hours[/color][/font]"
+            pos:-90,-100
+            font_size:13
+            size: 10,10
+        Label:
+            id:word_label
+            markup:True
+            color : 0,0,0
+            text: ''
+            pos:-85,-55
+            font_size:28
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial][color=#7B7373]Projects[/color][/font]"
+            pos:4,-100
+            font_size:13
+            size: 10,10
+        Label:
+            id:word_label2
+            markup:True
+            color : 0,0,0
+            text: ''
+            pos:-5,-55
+            font_size:28
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial][color=#7B7373]Rating[/color][/font]"
+            pos:80,-100
+            font_size:13
+            size: 10,10
+        Label:
+            id:word_label3
+            markup:True
+            color : 0,0,0
+            text: ''
+            pos:80,-55
+            font_size:28
+            size: 10,10
+        Button:
+            size_hint:(0.3, 0.05)
+            pos:140,130
+            font_size:11
+            text : "Show information"
+            on_press: app.show_recordsAntony()
+
+        RoundedButton1:
+            id:roundBtn
+            markup:True
+            text: ""
+            size_hint:None,None
+            pos:220,-40
+            size:300,100
+        RoundedButton2:
+            id:roundBtn
+            markup:True
+            text: ""
+            size_hint:None,None
+            pos:-120,-40
+            size:300,100
+            on_press:root.back()
+        TextInput:
+            multiline: False
+            size_hint:(0.5,0.05)
+            pos:100,530
+            background_normal: 'white.png'
+            background_active: 'white.png'
+        Label:
+            markup:True
+            text: "[b]Contact[/b]"
+            font_size:20
+            pos:110,-273
+        Label:
+            markup:True
+            text: "[b][color=#4f463b]Cancel[/color][/b]"
+            font_size:20
+            pos:-110,-273
+
+
