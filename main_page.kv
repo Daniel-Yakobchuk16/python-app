@@ -1,0 +1,183 @@
+main_page:
+    name:'main_page'
+    canvas.before:
+        Color:
+            rgba:(247/255,97/255,99/255,1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
+        Color:
+            rgba:(244/255,241/255,238/255,255)
+        RoundedRectangle:
+            pos:320,530
+            size:40,40
+            source: 'Daniel.png'
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        Color:
+            rgba:(255/255,211/255,94/255,255)
+        RoundedRectangle:
+            pos:-50,280
+            size:250,200
+            radius: [(30, 30), (30, 30), (30, 30), (30,30)]
+        Color:
+            rgba:(244/255,241/255,238/255,255)
+        Rectangle:
+            pos:20,280
+            size:150,150
+            source: 'man.png'
+        Color:
+            rgba:(240/255,225/255,206/255,255)
+        RoundedRectangle:
+            pos:150,390
+            size:110,110
+            radius: [(20, 20), (20, 20), (20, 20), (20,20)]
+        Color:
+            rgba:(209/255,223/255,110/255,255)
+        RoundedRectangle:
+            pos:360,399
+            size:90,70
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        Color:
+            rgba:(240/255,227/255,208/255,255)
+        RoundedRectangle:
+            pos:250,310
+            size:50,50
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        Color:
+            rgba:(255/255,255/255,255/255,1)
+        Rectangle:
+            pos:340,245
+            size:22,22
+            source:'icon-plus.png'
+        Color:
+            rgba:(244/255,241/255,238/255,255)
+        RoundedRectangle:
+            pos:35,180
+            size:40,40
+            source: 'Daniel.png'
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        RoundedRectangle:
+            pos:35,125
+            size:40,40
+            source: 'Bogdan.png'
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        RoundedRectangle:
+            pos:35,70
+            size:40,40
+            source: 'Alexa.png'
+            radius: [(10, 10), (10, 10), (10, 10), (10,10)]
+        Color:
+            rgba:(254/255,115/255,87/255,1)
+        Ellipse:
+            pos:230,470
+            size:15,15
+        Color:
+            rgba:(255/255,255/255,255/255,1)
+        Rectangle:
+            pos:330,15
+            size:30,30
+            source: 'icon-clock.png'
+        Rectangle:
+            pos:190,15
+            size:30,30
+            source: 'icon-list.png'
+        Rectangle:
+            pos:50,15
+            size:30,30
+            source: 'icon-options.png'
+        Rectangle:
+            pos:30,552
+            size:15,15
+            source: 'left-arrow.png'
+    FloatLayout:
+        orientation: 'vertical'
+        size:root.width, root.height
+
+        Label:
+            markup:True
+            text: "[b]Deliveroo[/b]"
+            pos:-100,260
+            font_size:20
+            size: 10,10
+        Label:
+            markup:True
+            text: "[color=#35302c]25[/color]"
+            pos:-10,160
+            font_size:40
+            size: 10,10
+        Label:
+            markup:True
+            text: "[color=#35302c]Active Tasks[/color]"
+            pos:10,120
+            font_size:15
+            size: 10,10
+        Label:
+            markup:True
+            text: "[b]Team[/b]"
+            pos:-130,-50
+            font_size:31
+            size: 10,10
+        Label:
+            markup:True
+            text: "[b]Bogdan Iva [/b]"
+            pos:-65,-89
+            font_size:15
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial]Front-end developer[/font]"
+            color : (255/255,255/255,255/255,0.5)
+            pos:-53,-107
+            font_size:13
+            size: 10,10
+        Label:
+            markup:True
+            text: "[b]Daniel Font[/b]"
+            pos:-73,-145
+            font_size:15
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial]Project Manager[/font]"
+            color : (255/255,255/255,255/255,0.5)
+            pos:-63,-163
+            font_size:13
+            size: 10,10
+        Label:
+            markup:True
+            text: "[b]Alexa Jagger[/b]"
+            pos:-74,-198
+            font_size:15
+            size: 10,10
+        Label:
+            markup:True
+            text: "[font=arial]Web Developer[/font]"
+            color : (255/255,255/255,255/255,0.5)
+            pos:-68,-216
+            font_size:13
+            size: 10,10
+        Button:
+            id:mary
+            size_hint:(0.5, 0.07)
+            pos:34,123
+            font_size:11
+            text : ""
+            background_color: (0, 0, 0, 0)
+            on_press: root.mary()
+        Button:
+            id:matt
+            size_hint:(0.5, 0.07)
+            pos:34,178
+            font_size:11
+            text : ""
+            background_color: (0, 0, 0, 0)
+            on_press: root.matt()
+        Button:
+            id:antony
+            size_hint:(0.5, 0.07)
+            pos:34,68
+            font_size:11
+            text : ""
+            background_color: (0, 0, 0, 0)
+            on_press: root.antony()
+
